@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+}
+.text-link {
+    color: var(--white-links);
+}
+.orange {
+    color: var(--orange);
+}
+.list-group {
+    --bs-list-group-bg: var(--black-second);
+    --bs-list-group-color: var(--white-links);
+}

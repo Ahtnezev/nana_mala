@@ -1,0 +1,45 @@
+@import './partials/colors.scss';
+@import './partials/custom.scss';
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    padding: 5rem 0;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    background-color: var(--black-second);
+    color: var(--white-links);
+    margin-top: auto;
+    min-height: 400px;
+    .footer__content__contacto > h4,
+    .footer__content__enlaces > h4,
+    .footer__content__horarios > h4 {
+        position: relative;
+        &::before {
+            content: "";
+            width: 20%;
+            border: 1px solid var(--orange);
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+    }
+    // .footer__content__contacto {
+    //     // border: 1px solid red;
+    // }
+    .credits {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        small {
+            border-bottom: 1px dashed;
+            line-height: 1;
+            > em a {
+                color: var(--credits);
+            }
+        }
+    }
+}
