@@ -1,12 +1,52 @@
 @import './partials/colors.scss';
 @import './partials/custom.scss';
 
+// body {
+//     background-color: #1A1B1F !important;
+//     color: var(--white-links);
+// }
+
 .main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+.header {
+    .nav {
+        overflow: hidden;
+        .nav__logo {
+            .logo-nav {
+                width: 40px;
+            }
+        }
+    }
+}
+
+#banner {
+    .cover {
+        border-bottom: 1px solid var(--orange);
+        height: 300px;
+        margin-bottom: 2rem;
+        .title {
+            top: 1%;
+            left: 2%;
+        }
+    }
+}
+
+#nosotros {
+    margin-bottom: 2rem;
+}
+
 .footer {
+    .whatsapp-icon {
+        bottom: 3%;
+        opacity: 0.85;
+        right: 3%;
+        width: 60px;
+        z-index: 2;
+    }
     padding: 5rem 0;
     border-top: 1px solid var(--orange);
     border-bottom: 1px solid var(--orange);
@@ -14,22 +54,28 @@
     color: var(--white-links);
     margin-top: auto;
     min-height: 400px;
+    .footer__content {
+        .clouds {
+            transform: rotate(180deg);
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+    }
     .footer__content__contacto > h4,
     .footer__content__enlaces > h4,
     .footer__content__horarios > h4 {
         position: relative;
         &::before {
             content: "";
-            width: 20%;
+            width: 13%;
             border: 1px solid var(--orange);
             position: absolute;
-            top: 50%;
-            left: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 250%);
         }
     }
-    // .footer__content__contacto {
-    //     // border: 1px solid red;
-    // }
     .credits {
         bottom: 0;
         left: 50%;
@@ -39,6 +85,145 @@
             line-height: 1;
             > em a {
                 color: var(--credits);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    #banner {
+        .cover {
+            height: 320px;
+            .title {
+                left: 3%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #banner {
+        .cover {
+            height: 420px;
+            .title {
+                font-size: 2.25rem;
+                top: 5%;
+                left: 5%;
+            }
+        }
+    }
+
+    #nosotros, #promociones {
+        max-width: 450px;
+        margin: 1rem auto;
+    }
+
+    // #nosotros {
+    //     .data, .title {
+    //         width: 450px;
+    //         margin: auto;
+    //     }
+    //     .title {
+    //         margin-bottom: 1rem;
+    //     }
+    // }
+
+}
+
+@media screen and (min-width: 768px) {
+    #nosotros, #promociones {
+        max-width: 100%;
+        margin: unset;
+    }
+    #promociones {
+        margin-top: 2rem;
+    }
+    #banner {
+        .cover {
+            height: 450px;
+            .title {
+                font-size: 3rem;
+                top: 5%;
+                left: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        .nav {
+            .nav__logo {
+                .logo-nav {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    #banner {
+        .cover {
+            height: 600px;
+            .title {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .footer {
+        padding: 5rem 0;
+        .footer__content {
+            .clouds {
+                display: none;
+            }
+        }
+        .footer__content__contacto > h4,
+        .footer__content__enlaces > h4,
+        .footer__content__horarios > h4 {
+            &::before {
+                content: "";
+                width: 20%;
+                top: 50%;
+                bottom: auto;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1118px) {
+
+    #invisible {
+        margin-top: 5.45rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #banner {
+        .cover {
+            height: calc(100vh - 85px);
+            .title {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #banner {
+        .cover {
+            .title {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #banner {
+        .cover {
+            .title {
+                font-size: 6rem;
             }
         }
     }
