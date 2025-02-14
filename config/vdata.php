@@ -4,7 +4,7 @@ return [
     'urls' => [
         'download_pdf' => 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
     ],
-    'footer_credits' => 'vicentE nerI',
+    'footer_credits' => 'vicente',
     'whatsapp_number' => '+520000000000',
     'swiper' => [
         'items' => [

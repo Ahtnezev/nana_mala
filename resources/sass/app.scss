@@ -40,6 +40,13 @@
 }
 
 .footer {
+    background-color: var(--black-second);
+    border-bottom: 1px solid var(--orange);
+    border-top: 1px solid var(--orange);
+    color: var(--white-links);
+    margin-top: auto;
+    min-height: 400px;
+    padding: 5rem 0;
     .whatsapp-icon {
         bottom: 3%;
         opacity: 0.85;
@@ -47,13 +54,6 @@
         width: 60px;
         z-index: 2;
     }
-    padding: 5rem 0;
-    border-top: 1px solid var(--orange);
-    border-bottom: 1px solid var(--orange);
-    background-color: var(--black-second);
-    color: var(--white-links);
-    margin-top: auto;
-    min-height: 400px;
     .footer__content {
         .clouds {
             transform: rotate(180deg);
