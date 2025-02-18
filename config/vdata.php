@@ -38,6 +38,11 @@ return [
         'alt' => 'Descripcion imagen'
     ],
     'footer' => [
+        'urls' => [
+            'instagram' => 'https://www.instagram.com/nanamala96/',
+            'tiktok' => 'https://www.tiktok.com/',
+            'facebook' => 'https://www.facebook.com/',
+        ],
         'aviso_privacidad' => 'Aviso de privacidad',
         'copy' => 'Copyright',
         'credits' => [

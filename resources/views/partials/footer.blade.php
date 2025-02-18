@@ -24,13 +24,18 @@
                                 </p>
                                 <div class="logo__social d-flex align-items-center justify-content-center justify-content-lg-start">
                                     <div class="me-3">
-                                        <a class="text-link" href="#" target="_blank">
+                                        <a class="text-link" href="{{ config('vdata.footer.urls.facebook') }}" target="_blank">
                                             <i class="fa-brands fa-facebook"></i>
                                         </a>
                                     </div>
-                                    <div class="ms-3">
-                                        <a class="text-link" href="#" target="_blank">
+                                    <div class="mx-3">
+                                        <a class="text-link" href="{{ config('vdata.footer.urls.instagram') }}" target="_blank">
                                             <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div class="ms-3">
+                                        <a class="text-link" href="{{ config('vdata.footer.urls.tiktok') }}" target="_blank">
+                                            <i class="fa-brands fa-tiktok"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -84,17 +89,17 @@
                                 <li class="list-group-item border-0 px-0 py-1">
                                     <a href="#inicio" class="text-link">Inicio</a>
                                 </li>
-                                <li class="list-group-item border-0 px-0 py-1">
+                                {{-- <li class="list-group-item border-0 px-0 py-1">
                                     <a href="#nosotros" class="text-link">Nosotros</a>
-                                </li>
+                                </li> --}}
                                 <li class="list-group-item border-0 px-0 py-1">
-                                    <a href="#menu" class="text-link">Nuestro Menú</a>
+                                    <a href="#menu" class="text-link">Menú</a>
                                 </li>
-                                <li class="list-group-item border-0 px-0 py-1">
+                                {{-- <li class="list-group-item border-0 px-0 py-1">
                                     <a href="#galeria" class="text-link">Galería</a>
-                                </li>
+                                </li> --}}
                                 <li class="list-group-item border-0 px-0 py-1">
-                                    <a href="#ubicacion" class="text-link">Ubicación</a>
+                                    <a href="#contactanos" class="text-link">Ubicación</a>
                                 </li>
                             </ul>
                         </div>
@@ -104,11 +109,11 @@
                         <div class="footer__content__horarios text-center mt-5 mt-xl-0">
                             <h4 class="subtitle-footer">Horarios</h4>
                             <ul class="list-group">
-                                <li class="list-group-item border-0"><span class="green fw-semibold">Lunes a Sábado</span>
+                                <li class="list-group-item border-0">Lunes a Sábado
                                     6:00 pm
                                     <span class="orange">-</span> 10:30 pm
                                 </li>
-                                <li class="list-group-item border-0"><span class="rose fw-semibold">Domingo</span>
+                                <li class="list-group-item border-0">Domingo
                                     10:00 am
                                     <span class="orange">-</span> 4:00 pm
                                 </li>

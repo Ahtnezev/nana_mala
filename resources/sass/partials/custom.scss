@@ -27,8 +27,28 @@ a {
 .text-link {
     color: var(--white-links);
 }
+.accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: #121619;
+}
+.accordion-button {
+    &::after {
+        filter: invert(1);
+    }
+}
 .orange {
     color: var(--orange);
+}
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.btn__orange {
+    transition: all 300ms ease-in;
+    background-color: var(--gold);
+    color: var(--white);
+    &:hover {
+        border: 1px dotted;
+    }
 }
 .green {
     color: var(--green);

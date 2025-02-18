@@ -3,7 +3,6 @@
 
 <head>
     @include('partials.metas')
-    @livewireStyles
     <!-- Styles -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -18,9 +17,9 @@
             @include('partials.banner')
         </section> <!-- #banner -->
 
-        @include('partials.aboutus')
+        {{-- @include('partials.aboutus') --}}
 
-        @include('partials.promotions')
+        {{-- @include('partials.promotions') --}}
 
         @include('partials.menu')
 
@@ -33,7 +32,6 @@
     @include('partials.modals')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    @livewireScripts
     @stack('js')
 </body>
 

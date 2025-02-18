@@ -1,11 +1,4 @@
-<section id="menu">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="title">Nuestro menú</h2>
-            </div>
-        </div>
-    </div>
+<section id="menu" class="my-5x mb-5">
     <div class="container-fluid px-0">
         <div class="col-12">
             <div class="position-relative">
@@ -19,7 +12,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h2 class="menu-title pt-3 ps-3 mb-0">Comidas</h2>
+                                        <h2 class="title pt-3 ps-3 mb-0">Nuestro menú</h2>
 
                                         <div class="menu-container pt-2 container">
 
@@ -106,35 +99,43 @@
                                                 </div>
 
                                                 <div class="col-12">
-                                                    <button class="btn btn-light fw-semibold mt-4 mb-5 float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                                        Mostrar guisados
-                                                    </button>
+                                                    <div class="d-md-none">
+                                                        <button class="btn btn-light fw-semibold mt-4 mb-5 float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                                            Mostrar guisados
+                                                        </button>
 
-                                                    <div
-                                                        class="offcanvas offcanvas-bottom text-bg-dark"
-                                                        data-bs-theme="dark"
-                                                        tabindex="-1"
-                                                        id="offcanvasBottom"
-                                                        aria-labelledby="offcanvasBottomLabel"
-                                                        style="height:50%"
-                                                    >
-                                                        <div class="offcanvas-header">
-                                                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Guisados</h5>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                        <div
+                                                            class="offcanvas offcanvas-bottom text-bg-dark"
+                                                            data-bs-theme="dark"
+                                                            tabindex="-1"
+                                                            id="offcanvasBottom"
+                                                            aria-labelledby="offcanvasBottomLabel"
+                                                            style="height:50%"
+                                                        >
+                                                            <div class="offcanvas-header">
+                                                                <h6 class="offcanvas-title title" id="offcanvasBottomLabel">Guisados</h6>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="offcanvas-body small">
+                                                                <ul class="list-group list-group-flush">
+                                                                    <li class="list-group-item">Champiñones</li>
+                                                                    <li class="list-group-item">Chorizo</li>
+                                                                    <li class="list-group-item">Papa c/chorizo</li>
+                                                                    <li class="list-group-item">Papa c/pollo</li>
+                                                                    <li class="list-group-item">Picadillo</li>
+                                                                    <li class="list-group-item">Pollo natural</li>
+                                                                    <li class="list-group-item">Queso oaxaca</li>
+                                                                    <li class="list-group-item">Rajas</li>
+                                                                    <li class="list-group-item">Tinga</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="offcanvas-body small">
-                                                            <ul class="list-group list-group-flush">
-                                                                <li class="list-group-item">Chorizo</li>
-                                                                <li class="list-group-item">Papa c/chorizo</li>
-                                                                <li class="list-group-item">Papa c/pollo</li>
-                                                                <li class="list-group-item">Picadillo</li>
-                                                                <li class="list-group-item">Champiñones</li>
-                                                                <li class="list-group-item">Rajas</li>
-                                                                <li class="list-group-item">Tinga</li>
-                                                                <li class="list-group-item">Pollo natural</li>
-                                                                <li class="list-group-item">Queso oaxaca</li>
-                                                            </ul>
-                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-none d-md-block">
+                                                        <button type="button" class="btn btn-light fw-semibold mt-4 mb-5 float-end" data-bs-toggle="modal" data-bs-target="#guisadosModal">
+                                                            Mostrar guisados
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div> <!-- row -->
@@ -149,6 +150,34 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="guisadosModal" tabindex="-1" aria-labelledby="guisadosModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-bottom-0">
+                    <h2 class="modal-title fs-5 gold-menu title" id="guisadosModalLabel">Guisados</h2>
+                    <button type="button" class="btn-close" style="filter:invert(1);" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-bottom-0">Champiñones</li>
+                        <li class="list-group-item border-bottom-0">Chorizo</li>
+                        <li class="list-group-item border-bottom-0">Papa c/chorizo</li>
+                        <li class="list-group-item border-bottom-0">Papa c/pollo</li>
+                        <li class="list-group-item border-bottom-0">Picadillo</li>
+                        <li class="list-group-item border-bottom-0">Pollo natural</li>
+                        <li class="list-group-item border-bottom-0">Queso oaxaca</li>
+                        <li class="list-group-item border-bottom-0">Rajas</li>
+                        <li class="list-group-item border-bottom-0">Tinga</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- <div class="container">
         <div class="col-12">
             <section class="download-menu my-4 text-center">

@@ -2,7 +2,7 @@
 @import './partials/custom.scss';
 
 // body {
-//     background-color: #1A1B1F !important;
+//     background-color: #050607 !important;
 //     color: var(--white-links);
 // }
 
@@ -25,7 +25,7 @@
 
 #banner {
     .cover {
-        border-bottom: 1px solid var(--orange);
+        border-bottom: 1px dashed var(--orange);
         height: 300px;
         margin-bottom: 2rem;
         .title {
@@ -86,8 +86,8 @@
 
 .footer {
     background-color: var(--black-second);
-    border-bottom: 1px solid var(--orange);
-    border-top: 1px solid var(--orange);
+    // border-bottom: 1px dashed var(--orange);
+    border-top: 1px dashed var(--orange);
     color: var(--white-links);
     margin-top: auto;
     min-height: 400px;

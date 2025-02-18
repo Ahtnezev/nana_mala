@@ -19,11 +19,13 @@
           <ul class="nav__list">
              <li><a href="#banner" class="nav__link">Inicio</a></li>
 
-             <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+             <li><a href="#menu" class="nav__link">Menú</a></li>
 
-             <li><a href="#promociones" class="nav__link">Promociones</a></li>
+             {{-- <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
 
-             <li><a href="#contactanos" class="nav__link">Contáctanos</a></li>
+             <li><a href="#promociones" class="nav__link">Promociones</a></li> --}}
+
+             <li><a href="#contactanos" class="nav__link">Ubicación</a></li>
           </ul>
        </div>
     </nav>
